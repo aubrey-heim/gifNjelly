@@ -133,23 +133,20 @@ form {
  */
 
 .wrapper {
-  min-height: 100%;
-
-  margin-bottom: -50px;
-}
-.footer,
-.push {
-  height: 180px;
+  position: relative;
+  min-height: 100vh;
 }
 
-footer {
-  position: fixed;
+#content-wrap {
+  padding-bottom: 200px;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
   bottom: 0;
   width: 100%;
-  /* overflow: hidden; */
-  overflow: hidden;
-  /* Footer height */
 }
+
 .footertext {
   font-size: small;
 }
