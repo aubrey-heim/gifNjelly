@@ -22,12 +22,7 @@ body {
   padding: 4%;
   height: 400px;
 }
-/* .col-md-3{
-  background: #d4b00f;
-  padding: 4%;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-} */
+
 .contact-info {
   margin-top: 10%;
 }
@@ -141,12 +136,6 @@ form {
   padding-bottom: 200px;    /* Footer height */
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .footertext {
   font-size: small;
 }
@@ -157,14 +146,11 @@ form {
   font-size: 15px;
   line-height: 24px;
   color: gray;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
-.site-footer hr {
-  border-top-color: #bbb;
-  opacity: 0.5;
-}
-.site-footer hr.small {
-  margin: 20px 0;
-}
+
 .site-footer h6 {
   color: #fff;
   font-size: 12px;
@@ -179,8 +165,8 @@ form {
   color: grey;
   text-decoration: none;
 }
+
 .footer-links {
-  padding-left: 0;
   list-style: none;
 }
 .footer-links li {
@@ -200,10 +186,6 @@ form {
 }
 .site-footer .social-icons {
   text-align: right;
-}
-
-.copyright-text {
-  margin: 0;
 }
 
 /* --------------members page and newpost styling-------------- */
@@ -248,10 +230,6 @@ img {
 
 /* ------------------oldpost voting page --------------------- */
 
-  /* .voting-section {
-    margin-left: 25px;
-  } */
-
 .gifVote {
   margin-right: 10px
 }
@@ -271,18 +249,31 @@ img {
   margin-top: 50px;
 }
 
+@media (min-width: 992px) {
+  .footer-links {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 768px) {
+  #footer {
+    display: inline;
+  }
+  #mobile-footer {
+    display: none;
+  }
+}
 @media (max-width: 991px) {
-  .site-footer [class^="col-"] {
-    margin-bottom: 30px;
+  .footer-links {
+    padding-top: 24px;
   }
 }
 @media (max-width: 767px) {
-  .site-footer {
-    padding-bottom: 0;
+  #footer {
+    display: none;
   }
-  .site-footer .copyright-text,
-  .site-footer .social-icons {
-    text-align: center;
+  #mobile-footer {
+    display: inline;
   }
+  
 }
 
