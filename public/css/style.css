@@ -53,9 +53,8 @@ body {
 }
 
 .login {
-  width: 320px;
   height: 350px;
-  padding: 20px;
+  padding: 2px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -103,7 +102,6 @@ a:link {
 form {
   display: inline-block;
   overflow: hidden;
-  width: 350px;
 }
 
 .navtext {
@@ -125,6 +123,7 @@ form {
 
 .wrapper {
   position: relative;
+  min-height: 100vh;
 }
 
 .footertext {
@@ -256,7 +255,7 @@ img {
     display: none;
   }
   #content-wrap {
-    padding-bottom: 200px;    /* Footer height */
+    padding-bottom: 150px;    /* Footer height */
   }
 }
 @media (max-width: 767px) {
@@ -267,7 +266,7 @@ img {
     display: inline;
   }
   #content-wrap {
-    padding-bottom: 100px;    /* Footer height */
+    padding-bottom: 40px;    /* Footer height */
   }
 }
 
