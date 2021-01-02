@@ -49,7 +49,6 @@ body {
 }
 
 body {
-  margin-bottom: 50px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -61,8 +60,6 @@ body {
 }
 
 .signup {
-  width: 320px;
-  height: 680px;
   padding: 2px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -106,7 +103,6 @@ a:link {
 form {
   display: inline-block;
   overflow: hidden;
-  margin: 0 auto;
   width: 350px;
 }
 
@@ -129,11 +125,6 @@ form {
 
 .wrapper {
   position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 200px;    /* Footer height */
 }
 
 .footertext {
@@ -238,8 +229,6 @@ img {
   margin-left: 10px;
 }
 .voting-card {
-  /* margin-top: 50px; */
-  /* margin-bottom: 10px; */
   margin: 50px 25px 10px 35px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   float: left;
@@ -254,6 +243,11 @@ img {
     padding-top: 0px;
   }
 }
+@media (max-width: 991px) {
+  .footer-links {
+    padding-top: 24px;
+  }
+}
 @media (min-width: 768px) {
   #footer {
     display: inline;
@@ -261,10 +255,8 @@ img {
   #mobile-footer {
     display: none;
   }
-}
-@media (max-width: 991px) {
-  .footer-links {
-    padding-top: 24px;
+  #content-wrap {
+    padding-bottom: 200px;    /* Footer height */
   }
 }
 @media (max-width: 767px) {
@@ -274,6 +266,8 @@ img {
   #mobile-footer {
     display: inline;
   }
-  
+  #content-wrap {
+    padding-bottom: 100px;    /* Footer height */
+  }
 }
 
